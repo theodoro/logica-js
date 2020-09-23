@@ -10,6 +10,10 @@
             <h1>Calculadora de consumo de combustivel</h1>
 
             <script>
+
+                var pularLinha = function(){
+                    document.write("<br>")
+                }
                 let tanque = 40
                 let km = 480
                 let media = 480 / 40
@@ -17,12 +21,14 @@
                 let precogaso = 2.90
                 let precoetanol = 2.40
 
-                document.write("Consumo de gasolina foi..." + Math.round(media) + "<br>")
+                document.write("Consumo de gasolina foi..." + Math.round(media))
+                pularLinha()
                 document.write("Consumo de etanol foi... " +  kmetanol / tanque)
-
+                pularLinha()
                 document.write("Preço por KM Gasolina... " + Math.round(media / precogaso))
-
-                document.write("Preço por KM Etanol... " + Math.round((kmetanol / tanque) / precogaso))
+                pularLinha()
+                document.write("Preço por KM Etanol... " + Math.round((media) / precogaso))
+                pularLinha()
             </script>
         </article>
     </body>
