@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculo de consumo</title>
+    </head>
+    <body>
+        <article>
+            <h1>Calculadora de consumo de combustivel</h1>
+
+            <script>
+                let tanque = 40
+                let km = 480
+                let media = 480 / 40
+                var kmetanol = 300
+                let precogaso = 2.90
+                let precoetanol = 2.40
+
+                document.write("Consumo de gasolina foi..." + Math.round(media) + "<br>")
+                document.write("Consumo de etanol foi... " +  kmetanol / tanque)
+
+                document.write("Preço por KM Gasolina... " + Math.round(media / precogaso))
+
+                document.write("Preço por KM Etanol... " + Math.round((kmetanol / tanque) / precogaso))
+            </script>
+        </article>
+    </body>
+</html>
