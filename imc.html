@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculo do IMC</title>
+</head>
+
+<body>
+    <article>
+        <h1>Calculo do IMC</h1>
+
+
+        <script>
+            //Função sem parametros que pula uma linha
+            let pular = function(){
+                document.write("<br>");
+            }
+            
+            //Função que mostra o texto
+            let mostrar = function(frase){
+                document.write(frase);
+            }
+            //Função que calcula o IMC
+            let imc = function(peso, altura){
+                return peso / (altura * altura);
+            }
+
+            mostrar("Seu IMC: " + Math.round(imc(90, 1.80)))
+            pular()
+            mostrar("Seu IMC: " + Math.round(imc(64, 1.60)))
+            pular()
+            mostrar("Seu IMC: " + Math.round(imc(50, 1.70)))
+            
+        </script>
+    </article>
+</body>
+
+</html>

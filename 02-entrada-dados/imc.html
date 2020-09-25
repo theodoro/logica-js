@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" >
+        <title>IMC com entrada de dados</title>
+    </head>
+    <script>
+        let pular = function(){
+            document.write("<br>")
+        }
+
+        let peso = prompt("Informe seu peso :")
+        let altura = prompt("Informe sua altura :")
+
+        let imc = function(peso, altura){
+        
+            return peso / (altura * altura)
+        }
+
+        document.write("Seu IMC: " + Math.round(imc(peso, altura)))
+
+
+
+        
+    </script>
+
+    <body>
+
+    </body>
+</html>
