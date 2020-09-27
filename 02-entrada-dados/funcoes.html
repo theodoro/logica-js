@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Bruno Aquino">
+        <meta name="description" content="Treinando funções JS">
+        <title>Treinando ordem das funções</title>
+    </head>
+    <script>
+        let primeira = function(){
+            console.log("1 - antes");
+            segunda();
+            console.log("1 - depois");
+        }
+
+        let segunda = function(){
+            console.log("2 - antes");
+            terceira();
+            console.log("2 - depois");
+        }
+
+        let terceira = function(){
+            console.log("3");
+        }
+
+        primeira();
+    </script>
+    <body>
+        <main>
+            <article>
+
+            </article>
+        </main>
+    </body>
+</html>
