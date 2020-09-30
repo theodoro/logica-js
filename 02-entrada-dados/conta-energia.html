@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bruno Aquino" >
+    <title>Calculo da conta de energia</title>
+</head>
+
+<body>
+  <script>
+      let kwh = prompt("Informe a quantidade de KWh consumido: ")
+      let tipo = prompt("Infome o tipo (R - Residêncial) - (I - Industrial) - (C - Comercial): ")
+
+      if (tipo.toUpperCase() == "R" & kwh < 500){
+        let calc = kwh * 0.40
+        document.write("Quantidade de KWh: " + parseInt(kwh) + "Valor a Pagar: " + parseFloat(calc))
+      } 
+      else if (tipo.toUpperCase() == "R" & kwh > 500) {
+        let calc = kwh * 0.65 
+        document.write("Quantidade de KWh: " + parseInt(kwh) + "Valor a Pagar: " + parseFloat(calc))
+      }
+      else if (tipo.toUpperCase()  == "C" & kwh <= 1000){
+        let calc = kwh * 0.55
+        document.write("Quantidade de KWh: " + parseInt(kwh) + "Valor a Pagar: " + parseFloat(calc))
+      }
+      else if (tipo.toUpperCase()  == "C" & kwh > 1000){
+        let calc = kwh * 0.60
+        document.write("Quantidade de KWh: " + parseInt(kwh) + "Valor a Pagar: " + parseFloat(calc))
+      }
+      else if (tipo.toUpperCase()  == "I" & kwh <= 5000){
+        let calc = kwh * 0.55
+        document.write("Quantidade de KWh: " + parseInt(kwh) + "Valor a Pagar: " + parseFloat(calc))
+      }
+      else if (tipo.toUpperCase()  == "I" & kwh > 5000){
+        let calc = kwh * 0.60
+        document.write("Quantidade de KWh: " + parseInt(kwh) + "Valor a Pagar: " + parseFloat(calc))
+      }
+      else{
+        document.write("Opção Inválida: " + tipo)
+      }
+  </script>
+</body>
+
+</html>

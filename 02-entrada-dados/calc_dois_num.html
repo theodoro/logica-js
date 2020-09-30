@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculo do IMC</title>
+</head>
+
+<body>
+  <script>
+      let num1 = prompt("Informe o primeiro numero : ")
+      let num2 = prompt("Informe o segundo numero :")
+      let opcao = prompt("Informe uma opção 1 a 4")
+
+      if (opcao == 1){
+          calc = parseInt(num1 + num2)
+      }
+      else if (opcao == 2) {
+          parseInt(calc = num1 - num2)
+      } 
+      else if (opcao == 3){
+          parseInt(calc = num1 / num2)
+      }
+      else if (opcao == 4){
+          parseInt(calc = num1 * num2)
+      }else{
+          document.write("Opção Invalida")
+          opcao = 0
+      }
+
+      document.write("Resulado: " + calc)
+
+    
+  </script>
+</body>
+
+</html>

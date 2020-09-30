@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculo do IMC</title>
+</head>
+
+<body>
+  <script>
+      let valor_imovel = prompt("Informe o valor do imovél : ")
+      let salario = prompt("Informe seu salário :")
+      let meses = prompt("Informe a quantidade de meses do financiamento: ")
+
+      let max_prestacao = salario * 0.30
+      let prestacao = valor_imovel / meses
+
+      if (prestacao <= max_prestacao){
+          document.write("Financiamento Aprovado!!! Valor da prestação: " + prestacao + "x" + meses)
+      }else{
+          document.write("Financiamento não Reprovado!!! ")
+      }
+
+    
+
+    
+  </script>
+</body>
+
+</html>
