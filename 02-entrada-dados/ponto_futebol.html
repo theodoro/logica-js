@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Bruno Aquino">
+        <meta name="description" content="Treinando funções JS">
+        <title>Treinando ordem das funções</title>
+    </head>
+    <script>
+      function pularLinha(){
+          return document.write("<br>")
+      }
+
+      function mostrar(frase){
+          return document.write(frase)
+          pularLinha();
+      }
+
+      let vitoria = prompt("Quandos jogos Venceu? ")
+      let empates = prompt("Quantos jogos empatou? ")
+      let pontos_adversario = prompt("Quanto ponto o adversário tem? ")
+
+      function calcPontos(){
+          pontos = (vitoria * 3) + parseInt(empates);
+          return pontos
+      }
+
+      mostrar("Nosso time tem " + calcPontos() + "pontos!" )
+
+      if (calcPontos() > parseInt(pontos_adversario)) {
+          mostrar("Nosso time está muito bem")
+      }
+      
+      if (calcPontos() < parseInt(pontos_adversario)){
+          mostrar("Nosso time vai muito mal")
+      }
+
+      if (calcPontos() == parseInt(pontos_adversario)){
+          mostrar("Estamos empatados!!!")
+      }
+
+    </script>
+    <body>
+        <main>
+            <article>
+
+            </article>
+        </main>
+    </body>
+</html>

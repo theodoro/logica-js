@@ -1,0 +1,44 @@
+<!<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta name="author" content="Bruno Aquino">
+    <meta name="description" content="Entrada de dados JS">
+    <meta charset="utf-8" >
+    <title>Dados vitais</title>
+  </head>
+  <script>
+    let pular = function(){
+      document.write("<br>")
+    }
+
+    let calcBatimentos = 0;
+    let caculaDiasDeVida = 0;
+    let idade = prompt("Quantos anos você tem? ");
+    pular();
+   
+   // let dias = idade * 365;
+
+// Função que calcula quantos anos viveu
+    let calc = function(idade){
+      caculaDiasDeVida = idade * 365;
+      return caculaDiasDeVida;
+    }
+
+    document.write("Você já viveu " + calc(idade) + " dias de vida");
+    pular();
+
+// Função que calcula quantos batimentos seu coração já bateu
+    let batimentos  = function(caculaDiasDeVida){
+      calcBatimentos = caculaDiasDeVida * 24 * 60 * 80;
+      return calcBatimentos;
+    }
+
+   // var batimentos = calc(idade) * 24 * 60 * 80;
+    document.write("Seu coração já bateu " + batimentos(caculaDiasDeVida) + " vezes. Haja coração!");
+  </script>
+
+  <body>
+
+  </body>
+</html>
