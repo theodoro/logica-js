@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+</head>
+<body>
+
+    <script>
+        let peso = prompt("Informe seu peso :")
+        let altura = prompt("Informe sua altura :")
+
+        function pular(){
+            return document.write("<br>")
+        }
+
+        function calcImc(peso, altura){
+            imc = peso / (altura * altura)
+            return imc
+        }
+
+        let imcUsuario = calcImc(peso, altura)
+
+        /*document.write("Seu IMC é: " + Math.round(imcUsuario))*/
+        pular()
+        if (imcUsuario <= 18.5){
+            document.write(`Seu IMC ${Math.round(imcUsuario)} indica que você está ABAIXO do peso!`)
+        }
+        else if (imcUsuario >= 35){
+            document.write(`Seu IMC ${Math.round(imcUsuario)} indica que você está ACIMA do peso!`)
+        }else{
+            document.write(`Seu IMC ${Math.round(imcUsuario)} indica que você está NORMAL do peso!`)
+        }
+
+
+    </script>
+    
+</body>
+</html>
