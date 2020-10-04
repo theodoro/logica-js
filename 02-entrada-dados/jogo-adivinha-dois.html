@@ -12,8 +12,10 @@
         let chute = prompt("Já pensei. Qual você acha que é?")
         if (chute == numeroPensado){
             document.write("Uau! Você acertou, pois eu pensei no " + numeroPensado)
-        }else{
-            document.write(`Não foi desta vez! Você pensou ${chute} e eu pensei ${numeroPensado}`)
+        }else if (chute != numeroPensado && chute > numeroPensado){
+            document.write(`O numero que você pensou ${chute} é MAIOR que o meu ${numeroPensado}`)
+        }else if (chute != numeroPensado && chute < numeroPensado){
+            document.write(`O numero que você pensou ${chute} é MENOR que o meu ${numeroPensado}`)
         }
 
        // document.write(numeroPensado)
