@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros</title>
+</head>
+<body>
+    <script>
+
+      function pularLinha(){
+          document.write('<br>')
+      }
+
+      let x = 0
+      let soma = 0
+
+      let juros = prompt('Informe a Taxa de Juros :')
+      let deposito = prompt('Informe o valor do deposito :')
+      while (x <= 23){
+
+          let saldo = parseFloat(deposito + ((deposito * juros)/100) + deposito)
+          soma = soma + saldo
+          x = x + 1
+
+          document.write(`${x} - Parcela / Saldo: ${soma.toFixed(2)}`)
+
+          pularLinha()
+          
+      }
+      document.write('Saldo final :' + soma.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>

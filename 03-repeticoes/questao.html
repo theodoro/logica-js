@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão</title>
+</head>
+<body>
+    <script>
+        let pontos = 0
+        let questao = 1
+
+        while (questao <= 3){
+            let resposta = prompt("Resposta da questão " + questao + ":")
+            if (questao == 1 & resposta == 'b'){
+                pontos = pontos + 1
+            }else if (questao == 2 & resposta == 'a'){
+                pontos = pontos + 1
+            }else if (questao == 3 & resposta == 'd'){
+                pontos = pontos + 1
+            }
+            questao = questao + 1
+        }
+
+        document.write("O aluno fez " + pontos + "ponto(s)")
+    </script>
+</body>
+</html>
