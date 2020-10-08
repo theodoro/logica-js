@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Aquino" >
+    <title>Jogo de adivinha</title>
+</head>
+<body>
+    <script>
+        function sorteia(n){
+            n = Math.round(Math.random()*100)
+            return n
+        }
+
+        let numeroPensado = sorteia(100)
+
+        let chute = prompt("Já pensei. Qual você acha que é?")
+
+        if (isNaN(chute)){
+            document.write('Apenas números são válidos!')
+        }else if (chute == numeroPensado){
+            document.write("Uau! Você acertou, pois eu pensei no " + numeroPensado)
+        }else if (chute != numeroPensado && chute > numeroPensado){
+            document.write(`O numero que você pensou ${chute} é MAIOR que o meu ${numeroPensado}`)
+        }else if (chute != numeroPensado && chute < numeroPensado){
+            document.write(`O numero que você pensou ${chute} é MENOR que o meu ${numeroPensado}`)
+        }
+
+    </script>
+</body>
+</html>
