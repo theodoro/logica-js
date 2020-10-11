@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano de copa do mundo</title>
+</head>
+<body>
+    <script>
+        let ano = 1930
+        let limite = prompt('Informe até que ano deseja saber se terá copa')
+
+        if(limite >= 1930){
+            while (ano <= limite){ //Enquanto
+            ano = ano + 4
+            document.write(`Em ${ano} tem COPA!` + "<br>")
+        }
+        document.write('Ufa! Esses foram os anos de copa do munto até' + ano)
+        }else{
+            alert(`Não existia copa antes de ${ano}`)
+        }
+
+    </script>
+</body>
+</html>

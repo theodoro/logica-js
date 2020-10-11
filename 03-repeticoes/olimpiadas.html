@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos Olimpiadas</title>
+</head>
+<body>
+    <script>
+        let anoIncial = prompt('Informe o ano da incial :')
+        let anoLimite = prompt('Informe o ano limite: ')
+
+        let ano = parseInt(anoIncial)
+        let limite = parseInt(anoLimite)
+
+        if (ano >= 1896){
+            while (ano <= limite){
+                ano = ano + 4
+                document.write(`Em ${ano} tem Olimpiadas` + "<br>")
+            }
+            document.write(`Ufa! Essas são as olimpiadas até ${ano}`)
+        }else{
+            document.write(`Você informou ${ano} e a primeira olimpiadas foi apenas em 1986`)
+        }
+    </script>
+</body>
+</html>
