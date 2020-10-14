@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada sem repetições alinhadas</title>
+</head>
+<body>
+    <script>
+        let tabuada = 1
+        let numero = 1
+
+        while (tabuada <= 10){
+            window.document.write(`${tabuada} x ${numero} = ${tabuada * numero} <br>`)
+            numero+=1
+
+            if (numero == 11){
+                numero = 1
+                tabuada+=1
+            }
+        }
+    </script>
+</body>
+</html>
