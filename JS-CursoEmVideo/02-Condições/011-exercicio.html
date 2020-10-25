@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual sua Nacionalidade</h1>
+
+    Informe onde você mora: <input type="text" name="txtLocal" id="txtLocal">
+    <input type="button" value="Verificar" id="btnverifica" onclick="calc()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calc(){
+
+            let local = 'Brasil'
+            let pais = document.getElementById('txtLocal')
+            let res = document.querySelector('div#res')
+
+            if (pais == local){
+                res.innerHTML = `<p>Você mora no ${pais} nos temos a mesma terra natal</p>`
+            }else{
+                res.innerHTML = `<p>Você mora no ${pais} Bem-vindo <strong>Gringo</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
