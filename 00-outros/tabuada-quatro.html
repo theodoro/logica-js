@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Aquino">
+    <title>Tabuada com mutiplicador</title>
+</head>
+<body>
+    <script>
+        let tabuada = parseInt(prompt('Informe qual Tabuada'))
+
+        let mostra = function(frase){
+            document.write(frase + "<br>")
+        }
+        let mutiplicador = 1
+        while(mutiplicador <= 10){
+            mostra(`${tabuada} vezes ${mutiplicador} é = ` + tabuada * mutiplicador)
+            mutiplicador +=1
+        }
+    </script>
+</body>
+</html>
