@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de idade da familia</title>
+</head>
+<body>
+    <script>
+        let totalDeFamiliares = prompt('Quantos familiares são?')
+        let soma = 0
+        for(let numero = 1; numero <= totalDeFamiliares; numero++){
+            let idadeTexto = prompt('Qual é a idade?')
+            let idade = parseInt(idadeTexto)
+            soma = soma + idade
+        }
+
+        let media = soma / totalDeFamiliares
+        alert('Média de idade: ' + media)
+    </script>
+</body>
+</html>
